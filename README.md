@@ -84,4 +84,9 @@ The project has successfully completed the analysis and design phases. A working
 ---
 
 ## 📌 Notes
-This project is part of a Software Engineering course and follows Agile development practices.
+This project is part of a Software Engineering course and follows Agile development practices. For code involving:
+- React (Frontend)
+- Node.js + Express (Backend)
+- PostgreSQL (Database)
+- GitHub (Version Control)
+Visit the "master" file. 
