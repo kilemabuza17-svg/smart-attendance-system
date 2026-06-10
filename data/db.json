@@ -1,0 +1,430 @@
+{
+  "meta": {
+    "name": "Smart Attendance System",
+    "version": "1.0.0",
+    "seededAt": "2026-05-30T14:34:21.914Z",
+    "note": "Local demo datastore. PostgreSQL schema is included in database/schema.sql."
+  },
+  "users": [
+    {
+      "id": "A001",
+      "role": "admin",
+      "name": "System Administrator",
+      "email": "admin@uneswa.ac.sz",
+      "passwordHash": "3caba30c0b9e3b15ab86cb0c275c24420f8c53d69ef590a2d9ff8dce26227354",
+      "department": "ICT"
+    },
+    {
+      "id": "L001",
+      "role": "lecturer",
+      "name": "Dr. N. Mkhonta",
+      "email": "lecturer@uneswa.ac.sz",
+      "passwordHash": "6b7bb1f532b0711612fa5e6b66e453ccea61bacdadad335adfd7c17083dfe100",
+      "department": "Computer Science"
+    },
+    {
+      "id": "2021CSC034",
+      "role": "student",
+      "name": "Sipho Dlamini",
+      "email": "2021csc034@student.uneswa.ac.sz",
+      "student_id": "2021CSC034",
+      "passwordHash": "6b7bb1f532b0711612fa5e6b66e453ccea61bacdadad335adfd7c17083dfe100",
+      "programme": "BSc Computer Science"
+    },
+    {
+      "id": "2022CSC019",
+      "role": "student",
+      "name": "Nomsa Khumalo",
+      "email": "2022csc019@student.uneswa.ac.sz",
+      "student_id": "2022CSC019",
+      "passwordHash": "6b7bb1f532b0711612fa5e6b66e453ccea61bacdadad335adfd7c17083dfe100",
+      "programme": "BSc Computer Science"
+    },
+    {
+      "id": "202305010",
+      "role": "student",
+      "name": "Wakhile Mabuza",
+      "email": "202305010@student.uneswa.ac.sz",
+      "student_id": "202305010",
+      "passwordHash": "6b7bb1f532b0711612fa5e6b66e453ccea61bacdadad335adfd7c17083dfe100",
+      "programme": "BSc"
+    }
+  ],
+  "lecturers": [
+    {
+      "lecturer_id": "L001",
+      "first_name": "Nandi",
+      "last_name": "Mkhonta",
+      "email": "lecturer@uneswa.ac.sz",
+      "department": "Computer Science",
+      "role": "lecturer"
+    }
+  ],
+  "students": [
+    {
+      "student_id": "2021CSC034",
+      "first_name": "Sipho",
+      "last_name": "Dlamini",
+      "email": "2021csc034@student.uneswa.ac.sz",
+      "programme": "BSc Computer Science",
+      "barcode_value": "STU-2021CSC034",
+      "status": "active"
+    },
+    {
+      "student_id": "2022CSC019",
+      "first_name": "Nomsa",
+      "last_name": "Khumalo",
+      "email": "2022csc019@student.uneswa.ac.sz",
+      "programme": "BSc Computer Science",
+      "barcode_value": "STU-2022CSC019",
+      "status": "active"
+    },
+    {
+      "student_id": "2021CSC051",
+      "first_name": "Thabo",
+      "last_name": "Nkosi",
+      "email": "2021csc051@student.uneswa.ac.sz",
+      "programme": "BSc Computer Science",
+      "barcode_value": "STU-2021CSC051",
+      "status": "active"
+    },
+    {
+      "student_id": "2021CSC078",
+      "first_name": "Lindiwe",
+      "last_name": "Maseko",
+      "email": "2021csc078@student.uneswa.ac.sz",
+      "programme": "BSc Computer Science",
+      "barcode_value": "STU-2021CSC078",
+      "status": "active"
+    },
+    {
+      "student_id": "2020MAT011",
+      "first_name": "Bongani",
+      "last_name": "Simelane",
+      "email": "2020mat011@student.uneswa.ac.sz",
+      "programme": "BSc Mathematics",
+      "barcode_value": "STU-2020MAT011",
+      "status": "active"
+    },
+    {
+      "student_id": "202305010",
+      "first_name": "Wakhile",
+      "last_name": "Mabuza",
+      "email": "202305010@student.uneswa.ac.sz",
+      "programme": "BSc",
+      "barcode_value": "STU-202305010",
+      "status": "active"
+    }
+  ],
+  "courses": [
+    {
+      "course_id": "CSC392",
+      "course_code": "CSC392",
+      "course_name": "Practices in Software Engineering",
+      "lecturer_id": "L001",
+      "credit_hours": 3,
+      "threshold": 75,
+      "venue": "Block B"
+    },
+    {
+      "course_id": "CSC301",
+      "course_code": "CSC301",
+      "course_name": "Algorithms and Data Structures",
+      "lecturer_id": "L001",
+      "credit_hours": 3,
+      "threshold": 75,
+      "venue": "Computer Lab 2"
+    },
+    {
+      "course_id": "PHY312",
+      "course_code": "PHY312",
+      "course_name": "Electronics and Circuit Theory",
+      "lecturer_id": "L001",
+      "credit_hours": 4,
+      "threshold": 75,
+      "venue": "Physics Lab"
+    },
+    {
+      "course_id": "MAT204",
+      "course_code": "MAT204",
+      "course_name": "Applied Mathematics",
+      "lecturer_id": "L001",
+      "credit_hours": 3,
+      "threshold": 75,
+      "venue": "Lecture Theatre 3"
+    }
+  ],
+  "enrollments": [
+    {
+      "enrollment_id": 1,
+      "course_id": "CSC392",
+      "student_id": "2021CSC034",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 2,
+      "course_id": "CSC392",
+      "student_id": "2022CSC019",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 3,
+      "course_id": "CSC392",
+      "student_id": "2021CSC051",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 4,
+      "course_id": "CSC392",
+      "student_id": "2021CSC078",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 5,
+      "course_id": "CSC301",
+      "student_id": "2021CSC034",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 6,
+      "course_id": "CSC301",
+      "student_id": "2022CSC019",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 7,
+      "course_id": "CSC301",
+      "student_id": "2021CSC051",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 8,
+      "course_id": "CSC301",
+      "student_id": "2021CSC078",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 9,
+      "course_id": "PHY312",
+      "student_id": "2021CSC034",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 10,
+      "course_id": "PHY312",
+      "student_id": "2022CSC019",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 11,
+      "course_id": "PHY312",
+      "student_id": "2021CSC051",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 12,
+      "course_id": "MAT204",
+      "student_id": "2021CSC034",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 13,
+      "course_id": "MAT204",
+      "student_id": "2022CSC019",
+      "status": "registered"
+    },
+    {
+      "enrollment_id": 14,
+      "course_id": "MAT204",
+      "student_id": "2021CSC078",
+      "status": "registered"
+    }
+  ],
+  "class_schedules": [
+    {
+      "schedule_id": 1,
+      "course_id": "CSC392",
+      "lecturer_id": "L001",
+      "day": "Monday",
+      "class_date": "2026-05-30",
+      "start_time": "08:00",
+      "end_time": "10:00",
+      "venue": "Block B",
+      "status": "scheduled"
+    },
+    {
+      "schedule_id": 2,
+      "course_id": "CSC301",
+      "lecturer_id": "L001",
+      "day": "Tuesday",
+      "class_date": "2026-05-30",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "venue": "Computer Lab 2",
+      "status": "scheduled"
+    },
+    {
+      "schedule_id": 3,
+      "course_id": "PHY312",
+      "lecturer_id": "L001",
+      "day": "Wednesday",
+      "class_date": "2026-05-30",
+      "start_time": "12:00",
+      "end_time": "14:00",
+      "venue": "Physics Lab",
+      "status": "scheduled"
+    },
+    {
+      "schedule_id": 4,
+      "course_id": "MAT204",
+      "lecturer_id": "L001",
+      "day": "Thursday",
+      "class_date": "2026-05-30",
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "venue": "Lecture Theatre 3",
+      "status": "scheduled"
+    }
+  ],
+  "attendance_sessions": [
+    {
+      "session_id": 1,
+      "course_id": "CSC392",
+      "lecturer_id": "L001",
+      "schedule_id": 1,
+      "date": "2026-05-30",
+      "start_time": "2026-05-30T06:00:00.000Z",
+      "end_time": null,
+      "status": "open",
+      "notes": "Live demo session"
+    },
+    {
+      "session_id": 2,
+      "course_id": "CSC301",
+      "lecturer_id": "L001",
+      "schedule_id": 2,
+      "date": "2026-05-30",
+      "start_time": "2026-05-29T08:00:00.000Z",
+      "end_time": "2026-05-29T10:00:00.000Z",
+      "status": "closed",
+      "notes": "Algorithms lecture"
+    },
+    {
+      "session_id": 3,
+      "course_id": "PHY312",
+      "lecturer_id": "L001",
+      "schedule_id": 3,
+      "date": "2026-05-30",
+      "start_time": "2026-05-28T10:00:00.000Z",
+      "end_time": "2026-05-28T12:00:00.000Z",
+      "status": "closed",
+      "notes": "Lab session"
+    },
+    {
+      "session_id": 4,
+      "course_id": "MAT204",
+      "lecturer_id": "L001",
+      "schedule_id": 4,
+      "date": "2026-05-30",
+      "start_time": "2026-05-27T08:00:00.000Z",
+      "end_time": "2026-05-27T10:00:00.000Z",
+      "status": "closed",
+      "notes": "Tutorial"
+    },
+    {
+      "session_id": 5,
+      "course_id": "CSC392",
+      "lecturer_id": "L001",
+      "schedule_id": 3,
+      "date": "2026-05-30",
+      "start_time": "2026-05-30T14:48:02.193Z",
+      "end_time": null,
+      "status": "open",
+      "notes": ""
+    }
+  ],
+  "attendance_records": [
+    {
+      "record_id": 1,
+      "session_id": 1,
+      "student_id": "2021CSC034",
+      "timestamp": "2026-05-30T06:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 2,
+      "session_id": 1,
+      "student_id": "2022CSC019",
+      "timestamp": "2026-05-30T06:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 3,
+      "session_id": 2,
+      "student_id": "2021CSC034",
+      "timestamp": "2026-05-29T08:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 4,
+      "session_id": 2,
+      "student_id": "2022CSC019",
+      "timestamp": "2026-05-29T08:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 5,
+      "session_id": 2,
+      "student_id": "2021CSC051",
+      "timestamp": "2026-05-29T08:00:00.000Z",
+      "status": "present",
+      "capture_method": "manual"
+    },
+    {
+      "record_id": 6,
+      "session_id": 3,
+      "student_id": "2021CSC034",
+      "timestamp": "2026-05-28T10:00:00.000Z",
+      "status": "late",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 7,
+      "session_id": 3,
+      "student_id": "2022CSC019",
+      "timestamp": "2026-05-28T10:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 8,
+      "session_id": 4,
+      "student_id": "2022CSC019",
+      "timestamp": "2026-05-27T08:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    },
+    {
+      "record_id": 9,
+      "session_id": 4,
+      "student_id": "2021CSC078",
+      "timestamp": "2026-05-27T08:00:00.000Z",
+      "status": "present",
+      "capture_method": "scanner"
+    }
+  ],
+  "exceptions": [
+    {
+      "exception_id": 1,
+      "session_id": 1,
+      "barcode_value": "STU-UNKNOWN",
+      "reason": "invalid",
+      "timestamp": "2026-05-30T06:00:00.000Z",
+      "message": "Barcode does not match any student."
+    }
+  ]
+}

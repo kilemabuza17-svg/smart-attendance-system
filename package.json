@@ -1,0 +1,14 @@
+{
+  "name": "smart-attendance-final-website",
+  "version": "1.0.0",
+  "description": "Final SmartAttend full-stack website with authentication, role dashboards, scanning, sessions, reports and admin functions.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "reset-data": "node -e \"const fs=require('fs'); const p='data/db.json'; if(fs.existsSync(p)) fs.rmSync(p); console.log('Data reset. Run npm start to seed again.');\""
+  },
+  "keywords": ["smart-attendance", "attendance", "node", "barcode", "university"],
+  "author": "SmartAttend Project Team",
+  "license": "MIT"
+}
