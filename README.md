@@ -41,7 +41,45 @@ The system improves efficiency, accuracy, and eliminates manual attendance proce
 ---
 
 ## 📅 Project Status
-Currently in the **System Design Phase** (UML & ER Diagrams)
+## Project Status
+
+### Completed ✅
+
+* Project Proposal Approved
+* Project Plan Developed
+* Software Requirements Specification (SRS) Completed
+* Use Case Analysis
+* Data Flow Diagram (DFD)
+* Flowchart Design
+* Entity Relationship Diagram (ERD)
+* Database Design
+* System Architecture Design
+* GitHub Repository Setup
+* Team Presentation Completed
+* User Interface Mockups Designed
+* Interactive Prototype Developed
+
+### In Progress 🔄
+
+* PostgreSQL Database Implementation
+* Backend Development (Node.js & Express)
+* Frontend Development (React)
+* Integration of Barcode Scanning Functionality
+* Attendance Session Management Module
+
+### Upcoming ⏳
+
+* System Integration
+* Functional Testing
+* User Acceptance Testing
+* Performance Testing
+* Final Documentation
+* Deployment and Demonstration
+
+### Current Milestone
+
+The project has successfully completed the analysis and design phases. A working prototype has been developed, and the team is currently implementing the database and core system functionalities.
+
 
 ---
 
